@@ -40,7 +40,16 @@ SEDIKIT TIPS DARI KAMI:
 7. GA USAH BANYAK BACOT, GA USAH DRAMA, YANG PUNYA KEPALA PUSING BUKAN LU DOANG !!!
 """
 
+### Tutorial Deploy To VPS
 
+-  ( `git clone https://github.com/ramadhani892/RAM-UBOT` )
+-  ( `cd RAM-UBOT` )
+-  ( `bash setup` )
+-  isi vars yang diminta, kalo ga diminta ga usah diisi
+-  Buka SCRREN di VPS Anda ( `screen -S RAM-UBOT` )
+-  Kemudian gunakan perintah ini untuk menyebarkan GeezProjects ( `python3 -m rams` ) Atau ( `bash start` )
+    
+    
 ## Credit
 TERIMAKASIH UNTUK
 
