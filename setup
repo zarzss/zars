@@ -120,7 +120,7 @@ if [ -f .env ]; then
 	rm .env
 fi
 
-echo """API_KEY = $api_id
+echo """API_KEY = $api_key
 API_HASH = $api_hash
 BOT_TOKEN = $bot_token
 DATABASE_URL = $database_url
