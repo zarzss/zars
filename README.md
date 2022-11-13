@@ -49,5 +49,5 @@ TERIMAKASIH UNTUK
 *   [TEAMULTROID](https://github.com/TeamUltroid) - ULTROID
 *   [RAMA](https://t.me/merdhni) - ⭐RAM - UBOT⭐
 *   [RISMAN](https://github.com/mrismanaziz/Man-rams) Man-rams
-*   [AngelBee/Ibel](https://github.com/SangeanSquad) - Queen Iraa for Re-Write
+*   [SANGEAN](https://github.com/SangeanSquad) - Queen Iraa for Re-Write
 *    DAN MASIH BANYAK LAGI TOT
