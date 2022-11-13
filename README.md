@@ -47,7 +47,7 @@ SEDIKIT TIPS DARI KAMI:
 -  ( `bash setup` )
 -  isi vars yang diminta, kalo ga diminta ga usah diisi
 -  Buka SCRREN di VPS Anda ( `screen -S RAM-UBOT` )
--  Kemudian gunakan perintah ini untuk menyebarkan GeezProjects ( `python3 -m rams` ) Atau ( `bash start` )
+-  Kemudian gunakan perintah ini untuk menjalankan Ram Ubot ( `python3 -m rams` ) Atau ( `bash start` )
     
     
 ## Credit
