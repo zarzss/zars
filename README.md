@@ -44,7 +44,9 @@ SEDIKIT TIPS DARI KAMI:
 
 -  ( `git clone https://github.com/ramadhani892/RAM-UBOT` )
 -  ( `cd RAM-UBOT` )
--  ( `bash setup` )
+-  ( `pip install -r requirements.txt` )
+-  ( mv sample_config.env config.env )
+-  ( nano config.env )
 -  isi vars yang diminta, kalo ga diminta ga usah diisi
 -  Buka SCRREN di VPS Anda ( `screen -S RAM-UBOT` )
 -  Kemudian gunakan perintah ini untuk menjalankan Ram Ubot ( `python3 -m rams` ) Atau ( `bash start` )
