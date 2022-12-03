@@ -54,8 +54,8 @@ pendulum
 pillow
 psutil
 py-tgcalls==0.9.3
-psycopg2
-psycopg2-binary
+#psycopg2
+#psycopg2-binary
 pybase64
 pydub
 pySmartDL
