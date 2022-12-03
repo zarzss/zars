@@ -87,7 +87,7 @@ selenium>=3.141.0
 telethon-session-sqlalchemy
 twitter_scraper
 telegraph
-telethon==1.25.1
+telethon
 telethon-tgcrypto
 urbandict>=0.5
 vcsi
