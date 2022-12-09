@@ -25,7 +25,7 @@
 
 
 ## DEPLOY TO HEROKU
-[Klik](https://heroku.com/deploy?template=https://github.com/ramadhani892/RAM-UBOT)
+[Klik](https://heroku.com/deploy?template=https://github.com/ramkay132/RAM-UBOT)
 
 """
 DISCLAIMER,
