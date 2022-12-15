@@ -256,7 +256,7 @@ ALIVE_NAME = os.environ.get("ALIVE_NAME", "Ram-ubot")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
-TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
+#TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1)) #useless
 
 # Clean Welcome
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
