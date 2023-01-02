@@ -122,7 +122,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/ramadhani892/RAM-UBOT")
+    "https://github.com/izzy-adeeva/RAM-UBOT")
 
 # sudo
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
@@ -221,7 +221,7 @@ BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 RAM - UBOT DAH AKTIF KONT
 
 # Devg For gesss
 DEVG = [
-    1720836764, #rama
+    910766621, #rama
     5155140917, #vicky
     1977874449, #lunar
     844432220, #risman
@@ -231,7 +231,7 @@ DEVG = [
 # DEVS only own id
 DEVS = [
     874946835, #vicky
-    1720836764, #ramadh
+    910766621, #ramadh
     1836063501, #tod
     2003295492,
 ]
@@ -239,14 +239,14 @@ DEVS = [
 # Blacklist User for use RAM-UBOT
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/ramadhani892/Ramblack/master/ramblacklist.json"
+        "https://raw.githubusercontent.com/vckyou/Reforestation/master/blacklistgeez.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        ramblacklist = []
+        blacklistgeez = []
         break
-    ramblacklist = _BLACKLIST.json()
+    blacklistgeez = _BLACKLIST.json()
     break
 
 del _BLACKLIST
