@@ -12,7 +12,7 @@ from rams.utils import edit_delete, edit_or_reply, ram_cmd as star
 from rams.events import register as mek
 while 0 < 6:
     _GCAST_BLACKLIST = get(
-        "https://raw.githubusercontent.com/ramadhani892/Ramblack/master/blacklistgcast.json"
+        "https://raw.githubusercontent.com/vckyou/Reforestation/master/blacklistgcast.json"
     )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
