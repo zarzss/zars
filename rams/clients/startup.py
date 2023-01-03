@@ -15,7 +15,7 @@ from rams import (
     STRING_4,
     STRING_5,
     STRING_SESSION,
-    ramblacklist,
+    blacklistgeez,
     bot,
 )
 
