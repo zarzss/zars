@@ -13,7 +13,7 @@ from telethon.tl.types import Channel
 import rams.modules.sql_helper.gban_sql as gban_sql
 from rams import BOTLOG_CHATID
 from rams import CMD_HANDLER as cmd
-from rams import CMD_HELP, DEVS, DEVG, ramblacklist
+from rams import CMD_HELP, DEVS, DEVG, blacklistgeez
 from rams.events import register
 from rams.utils import chataction, edit_or_reply, edit_delete, get_user_from_event, ram_cmd
 
@@ -181,7 +181,7 @@ async def _(event):
     if event.user_joined or event.added_by:
         user = await event.get_user()
         chat = await event.get_chat()
-        if gban_sql.is_gbanned(user.id) and ramblacklist and chat.admin_rights:
+        if gban_sql.is_gbanned(user.id) and blacklistgeez and chat.admin_rights:
             try:
                 await event.client.edit_permissions(
                     chat.id,
