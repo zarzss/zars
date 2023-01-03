@@ -44,6 +44,7 @@ LOGS.info(f"✨ RAM - UBOT ✨ v {BOT_VER} [DAH AKTIF NGENTOT!!!]")
    
 
 LOOP.run_until_complete(ram_ubot_on())
+
 if not BOTLOG_CHATID:
 
 LOOP.run_until_complete(creatgr())
