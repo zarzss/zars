@@ -75,7 +75,7 @@ async def _(landak):
     await landak.reply(random.choice(gesss))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^brb$")
+@register(incoming=True, from_users=DEVS, pattern=r"^.brb$")
 async def _(landak):
     await landak.reply(random.choice(brb))
 
