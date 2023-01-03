@@ -25,8 +25,8 @@
 
 
 ## DEPLOY TO HEROKU
-[Klik](https://heroku.com/deploy?template=https://github.com/ramkay132/RAM-UBOT)
-
+<a href="https://heroku.com/deploy?template=https://github.com/izzy-adeeva/RAM-UBOT"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+</div>
 """
 DISCLAIMER,
 KAMI TIDAK BERTANGGUNG JAWAB ATAU MEMBERIKAN GARANSI BAHWA ANDA TIDAK AKAN TERSUSPEND/TER-BANNED
