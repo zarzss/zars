@@ -7,7 +7,7 @@ from importlib import import_module
 
 from pytgcalls import idle
 
-from rams import BOT_VER, ramblacklist
+from rams import BOTLOG_CHATID, BOT_TOKEN, BOT_VER, ramblacklist
 from rams import LOGS, LOOP, bot
 from rams.clients import ram_ubot_on, ramulti
 from rams.modules import ALL_MODULES
@@ -46,8 +46,11 @@ LOGS.info(f"✨ RAM - UBOT ✨ v {BOT_VER} [DAH AKTIF NGENTOT!!!]")
 
 LOOP.run_until_complete(ram_ubot_on())
 if not BOTLOG_CHATID:
+
 LOOP.run_until_complete(creatgr())
+
 if not BOT_TOKEN:
+
 LOOP.run_until_complete(autobot())
 idle()
 if len(sys.argv) not in (1, 3, 4):
