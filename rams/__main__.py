@@ -12,6 +12,8 @@ from rams import LOGS, LOOP, bot
 from rams.clients import ram_ubot_on, ramulti
 from rams.modules import ALL_MODULES
 from rams import call_py
+from rams.utils import creatgr, autobot
+
 try:
     for module_name in ALL_MODULES:
         imported_module = import_module("rams.modules." + module_name)
@@ -43,6 +45,10 @@ LOGS.info(f"✨ RAM - UBOT ✨ v {BOT_VER} [DAH AKTIF NGENTOT!!!]")
    
 
 LOOP.run_until_complete(ram_ubot_on())
+if not BOTLOG_CHATID:
+LOOP.run_until_complete(creatgr())
+if not BOT_TOKEN:
+LOOP.run_until_complete(autobot())
 idle()
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
