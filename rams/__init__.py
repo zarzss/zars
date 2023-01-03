@@ -19,6 +19,7 @@ from git import Repo
 from pytgcalls import PyTgCalls
 from requests import get
 from telethon import Button
+from telethon.tl.functions.channels import JoinChannelRequest as Y
 from telethon.errors import UserIsBlockedError
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sessions import StringSession
