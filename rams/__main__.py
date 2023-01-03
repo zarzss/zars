@@ -5,7 +5,6 @@ import sys
 import requests
 from importlib import import_module
 
-from pytgcalls import idle
 
 from rams import BOTLOG_CHATID, BOT_TOKEN, BOT_VER, blacklistgeez
 from rams import LOGS, LOOP, bot
@@ -52,7 +51,6 @@ LOOP.run_until_complete(creatgr())
 if not BOT_TOKEN:
 
 LOOP.run_until_complete(autobot())
-idle()
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
