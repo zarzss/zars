@@ -44,18 +44,13 @@ LOGS.info(f"✨ RAM - UBOT ✨ v {BOT_VER} [DAH AKTIF NGENTOT!!!]")
    
 
 LOOP.run_until_complete(ram_ubot_on())
-
 if not BOTLOG_CHATID:
-
-LOOP.run_until_complete(creatgr())
-
+    LOOP.run_until_complete(creatgr())
 if not BOT_TOKEN:
-
-LOOP.run_until_complete(autobot())
+    LOOP.run_until_complete(autobot())
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     try:
         bot.run_until_disconnected()
     except ConnectionError:
-        pass
