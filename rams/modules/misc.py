@@ -90,7 +90,7 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n⭐ [rams Repo](https://github.com/ramadhani892/RAM-UBOT/blob/RAM-UBOT/README.md)"
+        "\n⭐ [rams Repo](https://github.com/izzy-adeeva/RAM-UTOD/blob/RAM-UTOD/README.md)"
         "\n⭐ [Video Tutorial](https://t.me/Geezprojectt/50)"
         "\n⭐ [List Variabel Heroku untuk RAM-UBOT](https://t.me/UserbotCh/11)",
     )
@@ -120,11 +120,11 @@ async def repo_is_here(event):
         f"│`★ Bot Ver    :` `{BOT_VER}@{branch}`\n"
         f"│`★ Support    :` [Ram Support](t.me/RamSupportt)\n"
         f"│`★ Channel    :` [Ch Support](t.me/UserbotCh)\n"
-        f"│`★ Owner Repo :` [merdhani](t.me/merdhni)\n"
+        f"│`★ Owner Repo :` [LANDAK](t.me/thisrama)\n"
         f"├✠╼━━━━━━━━━━━━━━━━\n"
-        f"│`★ Repository :` [𝙍𝘼𝙈 - 𝙐𝘽𝙊𝙏](https://github.com/ramadhani892/RAM-UBOT)\n"
+        f"│`★ Repository :` [𝙍𝘼𝙈 - 𝙐𝘽𝙊𝙏](https://github.com/izzy-adeeva/RAM-UTOD)\n"
         f"╰✠╼━━━━━━━━━━━━━━━━\n"
-        f"  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/ramadhani892/RAM-UBOT/blob/master/LICENSE)", link_preview=False, reply_to=event.reply_to_msg_id
+        f"  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/izzy-adeeva/RAM-UTOD/blob/master/LICENSE)", link_preview=False, reply_to=event.reply_to_msg_id
     )
     await event.delete()
 
