@@ -14,14 +14,6 @@
   "success_url": "https://t.me/ramaupportt",
   "stack": "container",
   "env": {
-    "API_KEY": {
-      "description": "Dapatkan API KEY di web my.telegram.org Masukan yg APP ID Telegram",
-      "required": true
-    },
-    "API_HASH": {
-      "description": "Dapatkan API Hash di web my.telegram.org",
-      "required": true
-    },
      "STRING_SESSION": {
       "description": "Dapatkan String Session di Grup » @ramsupportt » Lalu ketik #string",
       "required": true
