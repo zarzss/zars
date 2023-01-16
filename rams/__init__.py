@@ -139,7 +139,7 @@ BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()
 # default no leave
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001692751821]
+    BLACKLIST_CHAT = [-1001692751821, -1001813669338]
 
 # only developer
 OWNDEV = os.environ.get("OWNDEV", None)
@@ -585,7 +585,7 @@ with bot:
 with bot:
     try:
         bot(Y("@ramsupportt"))
-        bot(Y("@mutualan_temanrandom"))
+        bot(Y("@teman_random"))
         bot(Y("@b4c0d"))
     except BaseException:
         pass
