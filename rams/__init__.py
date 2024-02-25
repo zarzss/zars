@@ -748,7 +748,7 @@ with bot:
                     link_preview=False,
                 )
             await event.answer(
-                [result], switch_pm="👥 rams PORTAL", switch_pm_param="start"
+                [result], switch_pm="👥 mau ngapain kontol", switch_pm_param="start"
             )
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(rb"reopen")))
