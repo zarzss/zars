@@ -49,7 +49,7 @@ async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = []
-    time_suffix_list = ["Dtk", "Mnt", "Jam", "Hari"]
+    time_suffix_list = ["s", "m", "h", "d"]
 
     while count < 4:
         count += 50
@@ -70,15 +70,6 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(incoming=True, from_users=DEVG, pattern=r"^gesss$")
-async def _(landak):
-    await landak.reply(random.choice(gesss))
-
-
-@register(incoming=True, from_users=DEVS, pattern=r"^.brb$")
-async def _(landak):
-    await landak.reply(random.choice(brb))
-
 @ram_cmd(pattern="ping$")
 async def _(ping):
     """ For.ping command, ping the rams from any chat."""
@@ -87,14 +78,10 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
-    await ping.client.send_message(
-        ping.chat_id, f"**╰•★★ |Ram Ping| ★★•╯**\n"
-                    f"★ **speed:** "
-                    f"`%sms` \n"
-                    f"★ **Uptime:** "
-                    f"`{uptime}` \n"
-                    f"★ **owner:** [{user.first_name}](tg://user?id={user.id})\n" % (duration), reply_to=ping.reply_to_msg_id)
-    await ping.delete()
+    await ping.reply(
+            f"❏ ᴢᴀʀ ᴘɪɴɢ\n"
+            f"`%sms`" % (duration)
+    )
 
 @ram_cmd(pattern="rping$")
 @register(pattern=r"^\.cping(?: |$)(.*)", sudo=True)
@@ -129,7 +116,7 @@ async def _(pong):
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await pong.client.send_message(
-        pong.chat_id, f"**🌟𝗥𝗔𝗠-𝗨𝗕𝗢𝗧🌟**\n"
+        pong.chat_id, f"**🌟𝗭𝗔𝗥-𝗨𝗕𝗢𝗧🌟**\n"
                      f"** ➠  Sɪɢɴᴀʟ   :** "
                      f"`%sms` \n"
                      f"** ➠  Bᴏᴛᴠᴇʀ  :** "
@@ -173,10 +160,10 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     user= await pong.client.get_me()
     await pong.client.send_message(
-        pong.chat_id, f"**➾ OWNER      :** [{user.first_name}](tg://user?id={user.id}) \n"
-                     f"**➾ Kecepatan : ** %sms  \n"
-                     f"**➾ Branch       : ** [{branch}] \n" % (duration), reply_to=pong.reply_to_msg_id) 
-    await pong.delete()
+        pong.reply(
+            f"❏ ᴢᴀʀ ᴘɪɴɢ\n"
+            f"`%sms`" % (duration)
+    )
 
 @ram_cmd(pattern="speed$")
 async def speedtst(spd):
