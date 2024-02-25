@@ -158,7 +158,7 @@ async def redis(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    user= await pong.client.get_me()
+    user = await pong.client.get_me()
     await pong.client.send_message(
         pong.chat_id, f"**⛧𝗭𝗔𝗥-𝗣𝗜𝗡𝗚⛧**\n"
                      f"** ➠  Sɪɢɴᴀʟ   :** "
