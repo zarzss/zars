@@ -983,21 +983,6 @@ async def slap(replied_user, event):
     return caption
 
 
-@bot.on(ram_cmd(outgoing=True, pattern=r"boobs(?: |$)(.*)"))
-async def _(e):
-    await e.edit("`Berdosa, Mendapatkan Gambar Boobs...`")
-    await sleep(3)
-    await e.edit("`Mengirim Gambar Boobs...`")
-    nsfw = requests.get(
-        'http://api.oboobs.ru/noise/1').json()[0]["Gambar Boobs"]
-    urllib.request.urlretrieve(
-        "http://media.oboobs.ru/{}".format(nsfw), "*.jpg")
-    os.rename('*.jpg', 'boobs.jpg')
-    await e.client.send_file(e.chat_id, "boobs.jpg")
-    os.remove("boobs.jpg")
-    await e.delete()
-
-
 @bot.on(ram_cmd(outgoing=True, pattern=r"pantat(?: |$)(.*)"))
 async def _(e):
     await e.edit("`Berdosa, Mendapatkan Gambar Pantat Yang Indah...`")
@@ -1256,6 +1241,18 @@ async def moon(event):
         return
 
 
+@bot.on(ram_cmd(outgoing=True, pattern=r"lul$"))
+async def moon(event):
+    deq = deque(list("😂🤣😂🤣😂🤣"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
+
+
 @bot.on(ram_cmd(outgoing=True, pattern=r"bunga$"))
 async def moon(event):
     deq = deque(list("🌼🌻🌺🌹🌸🌷"))
@@ -1363,6 +1360,16 @@ async def earth(event):
     except BaseException:
         return
 
+@bot.on(ram_cmd(outgoing=True, pattern="muah$"))
+async def mwah(event):
+    deq = deque(list("😗😙😚😚😘"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
 
 @bot.on(ram_cmd(outgoing=True, pattern="emo$"))
 async def earth(event):
@@ -1624,11 +1631,11 @@ async def nih(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n />💖 *Ini Buat Kamu`"
+                     "`\n />💖 *nih buat kamu`"
                      "\n                    \n"
                      r"`(\_/)`"
                      "`\n(●_●)`"
-                     "`\n💖<\\  *Tapi Bo'ong`")
+                     "`\n💖<\\  *gajadi, kamu ga deserve it`")
 
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"fag$"))
@@ -1837,6 +1844,10 @@ CMD_HELP.update({
     "\nUsage: Telapak Tangan:P"
     f"\n\n>`{cmd}moon`"
     "\nUsage: animasi bulan."
+    f"\n\n>`{cmd}lul`"
+    "\nUsage: animasi lol."
+    f"\n\n>`{cmd}muah`"
+    "\nUsage: animasi tiyum."
     f"\n\n>`{cmd}clock`"
     "\nUsage: animasi jam."
     f"\n\n>`{cmd}hi`"
