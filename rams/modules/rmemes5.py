@@ -374,6 +374,59 @@ async def _(event):
     await e.edit("🚶                                🐢")
     await e.edit("`NGAPAIN DI LIAT?😒😡`")
 
+@ram_cmd(pattern="dino$")
+async def _(event):
+    typew = await edit_or_reply(event, "`DINN DINNNNN.....`")
+    await typew.edit("`DINOOOOSAURUSSSSS!!`")
+    await typew.edit("`🏃                        🦖`")
+    await typew.edit("`🏃                       🦖`")
+    await typew.edit("`🏃                      🦖`")
+    await typew.edit("`🏃                     🦖`")
+    await typew.edit("`🏃   `LARII`          🦖`")
+    await typew.edit("`🏃                   🦖`")
+    await typew.edit("`🏃                  🦖`")
+    await typew.edit("`🏃                 🦖`")
+    await typew.edit("`🏃                🦖`")
+    await typew.edit("`🏃               🦖`")
+    await typew.edit("`🏃              🦖`")
+    await typew.edit("`🏃             🦖`")
+    await typew.edit("`🏃            🦖`")
+    await typew.edit("`🏃           🦖`")
+    await typew.edit("`🏃 WOARGH!  🦖`")
+    await typew.edit("`🏃           🦖`")
+    await typew.edit("`🏃            🦖`")
+    await typew.edit("`🏃             🦖`")
+    await typew.edit("`🏃              🦖`")
+    await typew.edit("`🏃               🦖`")
+    await typew.edit("`🏃                🦖`")
+    await typew.edit("`🏃                 🦖`")
+    await typew.edit("`🏃                  🦖`")
+    await typew.edit("`🏃                   🦖`")
+    await typew.edit("`🏃                    🦖`")
+    await typew.edit("`🏃                     🦖`")
+    await typew.edit("`🏃  Huh-Huh           🦖`")
+    await typew.edit("`🏃                   🦖`")
+    await typew.edit("`🏃                  🦖`")
+    await typew.edit("`🏃                 🦖`")
+    await typew.edit("`🏃                🦖`")
+    await typew.edit("`🏃               🦖`")
+    await typew.edit("`🏃              🦖`")
+    await typew.edit("`🏃             🦖`")
+    await typew.edit("`🏃            🦖`")
+    await typew.edit("`🏃           🦖`")
+    await typew.edit("`🏃          🦖`")
+    await typew.edit("`🏃         🦖`")
+    await typew.edit("`DIA SEMAKIN MENDEKAT!!!`")
+    await asyncio.sleep(1)
+    await typew.edit("`🏃       🦖`")
+    await typew.edit("`🏃      🦖`")
+    await typew.edit("`🏃     🦖`")
+    await typew.edit("`🏃    🦖`")
+    await typew.edit("`Dahlah Pasrah Aja`")
+    await asyncio.sleep(1)
+    await typew.edit("`🧎🦖`")
+    await asyncio.sleep(2)
+    await typew.edit("`-TAMAT-`")
 
 @ram_cmd(pattern="mf$")
 async def _(event):
@@ -399,7 +452,7 @@ async def _(event):
             "`Mengirim Cintaku.. 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Mengirim Cintaku.. 84%\n█████████████████████▒▒▒▒ `",
             "`Mengirim Cintaku.. 100%\n█████████CINTAKU███████████ `",
-            "`Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You 💞`",
+            "`Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu,` [I Love You 💞](tg://settings)",
         ]
         animation_interval = 2
         animation_ttl = range(11)
@@ -447,11 +500,6 @@ async def _(event):
     sleep(2)
     await typew.edit("TINGGALIN AJA YA AJG!!!!")
 
-@ram_cmd(pattern="sfs(?: |$)(.*)")
-async def _(event):
-    sfs = await edit_or_reply(event, "**KAK AYO SFS SINI HEHE....**")
-    sleep(2.5)
-    await sfs.edit(f"**INI ADA DISNI** = [TEKAN KAK]({CH_SFS})")
 
 @ram_cmd(pattern="wcarbon(?:|$)(.*)")
 async def _(event):
@@ -473,10 +521,4 @@ CMD_HELP.update({
     \nUsage: mengirim cintamu ke seseorang.\
     \n\n`{cmd}sange` ;  `{cmd}gblk`\
     \nUsage: cobalah sndiri ngentot."
-})
-
-CMD_HELP.update({
-    "sfs":
-    f"`{cmd}sfs` or `{cmd}gi`\
-    \nNOTES: **HANYA DI GUNAKAN UNTUK ADMIN!**"
 })
