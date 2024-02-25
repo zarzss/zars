@@ -85,7 +85,7 @@ async def ban_user_from_bot(user, reason, reply_to=None):
         add_user_to_bl(user.id, get_display_name(user), user.username, reason, date)
     except Exception as e:
         LOGS.error(str(e))
-    banned_msg = f"**Anda Telah Dibanned dari Bot ini.\nKarena:** `{reason}`"
+    banned_msg = f"**you've been banned from this bot."
     await tgbot.send_message(user.id, banned_msg)
     info = f"**#Banned_Bot_PM_User**\
             \n**First Name:** {_format.mentionuser(get_display_name(user) , user.id)}\
@@ -101,7 +101,7 @@ async def unban_user_from_bot(user, reason, reply_to=None):
         rem_user_from_bl(user.id)
     except Exception as e:
         LOGS.error(str(e))
-    banned_msg = "**Lo udah gua unbanned Nih ngentot anjing bangsat, jangan ngejamet lagi!!!.**"
+    banned_msg = "**you're free now, don't make a mistake again.**"
 
     if reason is not None:
         banned_msg += f"\n**Karena:** {reason}"
