@@ -25,7 +25,7 @@ from rams import CMD_HELP
 from rams.utils import edit_delete, edit_or_reply, ram_cmd as tod
 
 
-@tod(pattern="sosmed(?: |$)(.*)")
+@tod(pattern="dw(?: |$)(.*)")
 async def insta(event):
     xxnx = event.pattern_match.group(1)
     if xxnx:
@@ -37,7 +37,7 @@ async def insta(event):
             event,
             "**Berikan Link Sosmed atau Reply Link Sosmed Untuk di Download**",
         )
-    xx = await edit_or_reply(event, "`Bentar Tod...`")
+    xx = await edit_or_reply(event, "`bentar anjg...`")
     chat = "@SaveAsbot"
     async with event.client.conversation(chat) as conv:
         try:
@@ -139,27 +139,8 @@ async def _(event):
 CMD_HELP.update(
     {
         "sosmed": f"**Plugin : **`sosmed`\
-        \n\n  •  **Syntax :** `{cmd}sosmed` <link>\
+        \n\n  •  **Syntax :** `{cmd}dw` <link>\
         \n  •  **Function : **Download Media Dari Pinterest / Tiktok / Instagram.\
-    "
-    }
-)
-
-CMD_HELP.update(
-    {
-        "deez": f"**Plugin : **`DeezLoader`\
-        \n\n  •  **Syntax :** `{cmd}dez` <link>\
-        \n  •  **Function : **Download Lagu Via Deezloader\
-    "
-    }
-)
-
-
-CMD_HELP.update(
-    {
-        "tiktok": f"**Plugin : **`tiktok`\
-        \n\n  •  **Syntax :** `{cmd}tiktok` <link>\
-        \n  •  **Function : **Download Video Tiktok Tanpa Watermark\
     "
     }
 )
