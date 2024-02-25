@@ -34,10 +34,10 @@ else:
 
 async def creatgr():
     LOGS.info("LAGI GUA BIKININ GRUP BUAT LO NGENTOT LO KONTOL")
-    desc = "Group Log untuk ⭐RAM-UBOT⭐.\n\nJANGAN KELUAR LO MONYED NANTI CRASH!.\n\n✨ Powered By ~ @UserbotCh ✨"
+    desc = "Group Log untuk Zar Userbot.\n\nJANGAN KELUAR LO MONYED NANTI CRASH!.\n\n⛧ Powered By ~ @uTits ⛧"
     try:
         grup = await bot(
-            CreateChannelRequest(title="✨RAM UBOT✨ LOGS", about=desc, megagroup=True)
+            CreateChannelRequest(title="ZAR UBOT LOGS", about=desc, megagroup=True)
         )
         grup_id = grup.chats[0].id
     except Exception as e:
@@ -58,9 +58,9 @@ async def autobot():
         BOTLOG_CHATID, "**GUA LAGI BIKIN BOT ASISSTANT DI @BOTFATHER YA NGENTOD, SABAR DULU LU, KALO GA SABAR MATI AJA NYUSUL BAPAK LO**"
     )
     who = await bot.get_me()
-    name = who.first_name + " Adalah Bot"
+    name = who.first_name + " Assistant"
     if who.username:
-        username = who.username + "TapiDiaBot"
+        username = who.username + "Assistantbot"
     else:
         username = "ram" + (str(who.id))[5:] + "ubot"
     bf = "@BotFather"
@@ -111,20 +111,20 @@ async def autobot():
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_file(bf, "rams/utils/styles/asisstant.jpg")
+            await bot.send_file(bf, "rams/utils/styles/zarsist.jpg")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_message(bf, f"Asisstan punya si kontol {who.first_name}")
+            await bot.send_message(bf, f"⛧ Owner bot: {who.first_name}")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @RamSupportt ✨"
+                bf, f"⛧ Owner ~ {who.first_name} ⛧\n\n⛧ Managed By ~ @uTits ⛧"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -153,20 +153,20 @@ async def autobot():
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_file(bf, "rams/utils/styles/asisstant.jpg")
+        await bot.send_file(bf, "rams/utils/styles/zarsist.jpg")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setabouttext")
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_message(bf, f"Buatan anak kontol {who.first_name}")
+        await bot.send_message(bf, f"⛧ Owner bot: {who.first_name}")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setdescription")
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @RamSupportt ✨"
+            bf, f"⛧ Owner ~ {who.first_name} ⛧\n\n⛧ Managed By ~ @uTits ⛧"
         )
         await bot.send_message(
             BOTLOG_CHATID,
