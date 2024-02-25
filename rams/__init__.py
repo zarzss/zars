@@ -86,8 +86,8 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY") or "23129036"
-API_HASH = os.environ.get("API_HASH") or "34efb38c74d5e6b25d1bb6234396a8af"
+API_KEY = os.environ.get("API_KEY") or "23423461"
+API_HASH = os.environ.get("API_HASH") or "55224304c3d8ded1c6d968398372d1af"
 
 # rams Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
@@ -102,7 +102,7 @@ BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or 0)
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
-LMT_PM = int(os.environ.get("LMT_PM", 5))
+LMT_PM = int(os.environ.get("LMT_PM", 3))
 
 # Send .chatid in any group with all your administration bots (added)
 G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", "")
@@ -123,16 +123,16 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/izzy-adeeva/RAM-UTOD")
+    "https://github.com/zarzss/zars")
 
 # sudo
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 
 #handler
-CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
+CMD_HANDLER = os.environ.get("CMD_HANDLER") or "-"
 
-SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
+SUDO_HANDLER = os.environ.get("SUDO_HANDLER") or "?"
 
 BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()}
 
@@ -144,7 +144,7 @@ if not BLACKLIST_CHAT:
 # only developer
 OWNDEV = os.environ.get("OWNDEV", None)
 if not OWNDEV:
-    OWNDEV = [1826643972, 1720836764, 5545799206, 1836063501, 910766621]
+    OWNDEV = [1478997683]
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -156,7 +156,7 @@ DB_URI = os.environ.get("DATABASE_URL", None)
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
 
 # remove.bg API key
-REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
+REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "4n9xEHXQSZ34sPv4wBZ3H8cw")
 
 # Redis URI & Redis Password
 REDIS_URI = os.environ.get('REDIS_URI', None)
@@ -209,15 +209,15 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .rambot (alive)
-RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "Hey bro, I am rams."
+RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "apa lu liat-liat anjg?"
 
 DEFAULT = list(map(int, b64decode("MTgyNjY0Mzk3Mg==").split()))
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+REPO_NAME = os.environ.get("REPO_NAME") or "zarsss"
 
 # Default botlog
-BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 RAM - UBOT DAH AKTIF KONTOL!!! 💢```"
+BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 𝗭𝗔𝗥 𝗨𝗕𝗢𝗧 𝗗𝗔𝗛 𝗔𝗞𝗧𝗜𝗙 𝗞𝗢𝗡𝗧𝗢𝗟 💢```"
 
 
 # Devg For gesss
@@ -227,6 +227,7 @@ DEVG = [
     1977874449, #lunar
     844432220, #risman
     2003295492,
+    1478997683,
 ]
 
 # DEVS only own id
@@ -235,6 +236,7 @@ DEVS = [
     910766621, #ramadh
     1836063501, #tod
     2003295492,
+    1478997683,
 ]
 
 # Blacklist User for use RAM-UBOT
@@ -253,7 +255,7 @@ while 0 < 6:
 del _BLACKLIST
 
 # Default .alive Name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Ram-ubot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "zarszs")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -269,7 +271,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "RAM-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "zar-ubot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "9.2.5")
@@ -289,10 +291,10 @@ HELP_LOGO = os.environ.get(
    "HELP_LOGO") or "https://telegra.ph/file/35fad21fce80bcf7ee128.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ramadh20"
+IG_ALIVE = os.environ.get("IG_ALIVE") or None
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "💫"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⛧"
 
 # Picture For VCPLUGIN
 PLAY_PIC = (
@@ -306,18 +308,18 @@ QUEUE_PIC = (
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/ramsupportt"
+    "GROUP_LINK") or None
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/teervigroup"
+    "OWNER_BOT") or "t.me/utits"
 
 # CH sfs bot
-CH_SFS = os.environ.get("CH_SFS") or "t.me/userbotCh"
+CH_SFS = os.environ.get("CH_SFS") or "t.me/lickhing"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "Lu Siapa Kontol? Gua Zar"
 
 # LASTFM_API = os.environ.get("LASTFM_API", None)
 # LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -502,7 +504,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**RAM-UBOT v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**ZAR-UBOT v{BOT_VER} Sedang berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -557,7 +559,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                 custom.Button.inline(
                     "««", data="{}_prev({})".format(prefix, modulo_page)
                 ),
-                custom.Button.inline("Tutup", b"close"),
+                custom.Button.inline("ᶠYͧoͨᵏu", b"close"),
                 custom.Button.inline(
                     "»»", data="{}_next({})".format(prefix, modulo_page)
                 ),
@@ -584,9 +586,7 @@ with bot:
 
 with bot:
     try:
-        bot(Y("@geezram"))
-        bot(Y("@temen_tele"))
-        bot(Y("@b4c0d"))
+        bot(Y("@lickhing"))
     except BaseException:
         pass
     try:
@@ -678,7 +678,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**✨ RAM - UBOT MENU ✨**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**⛧ ZAR - UBOT MENU ⛧**\n\n⛧  **Owner** [{user.first_name}](tg://user?id={user.id})\n⛧  **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -687,7 +687,7 @@ with bot:
                     description="Repository RAM - UBOT",
                     url="https://t.me/ramsupportt",
                     thumb=InputWebDocument(HELP_LOGO, 0, "image/jpeg", []),
-                    text="**🌟 RAM - UBOT 🌟**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [merdhani](https://t.me/merdhni)\n**Support :** @UserbotCh\n❍▸ **Repository :** [⭐ RAM - UBOT ⭐](https://github.com/ramadhani892/RAM-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**⛧ ZAR - UBOT ⛧**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner :** [jar](https://t.me/uTits)\n**Support :** @UserbotCh\n❍▸ **Repository :** [⭐ RAM - UBOT ⭐](https://github.com/ramadhani892/RAM-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/ramsupportt"),
@@ -732,16 +732,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="🌟 RAM - UBOT 🌟",
-                    description="RAM - UBOT | Telethon",
-                    url="https://t.me/ramsupportt",
+                    title="⛧ ZAR - UBOT ⛧",
+                    description="ZAR - UBOT | @uTits",
+                    url="https://t.me/lickhing",
                     thumb=InputWebDocument(HELP_LOGO, 0, "image/jpeg", []),
-                    text=f"**✨ RAM - UBOT ✨**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @UserbotCh\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**⛧ ZAR - UBOT ⛧**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Owner:** @uTits\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/ramsupportt"),
+                            custom.Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/lickhing"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/ramadhani892/RAM-UBOT"
+                                "ᴏᴡɴᴇʀ", "tg://user?id=1478997683"
                              ),
                         ],
                     ],
@@ -756,7 +756,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**⭐ RAM - UBOT ⭐ Inline Menu**\n\n🔸 **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Module"
+                text = f"**⛧ ZAR - UBOT ⛧ MENU**\n\n⛧ **Owner** [{user.first_name}](tg://user?id={user.id})\n⛧  **Jumlah** `{len(dugmeler)}` Module"
                 await event.edit(
                     text,
                     file=ramlogo,
@@ -786,9 +786,9 @@ with bot:
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in DEVS and SUDO_USERS:
-                openlagi = custom.Button.inline("• Re-Open Menu •", data="reopen")
+                openlagi = custom.Button.inline("⛧ Re-Open Menu ⛧", data="reopen")
                 await event.edit(
-                    "✴️ **Help Mode Button Ditutup!** ✴️", buttons=openlagi
+                    "⛧ **Help Mode Button Ditutup!** ⛧", buttons=openlagi
                 )
             else:
                 reply_pop_up_alert = f"Dikata Jangan Asal pencet milik {owner}"
