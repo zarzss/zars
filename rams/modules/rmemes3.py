@@ -79,7 +79,7 @@ async def _(event):
     sleep(3)
     await event.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n/>💔  *E GAK DEH,UDH DI KSH GRATIS LU RUSAKIN`")
+                     "`\n/>💔  *EH GAK DEH, UDAH DI KASIH GRATIS LU RUSAKIN`")
     sleep(2)
     await event.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
@@ -144,37 +144,16 @@ async def _(event):
 async def _(event):
     await event.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n />💖 *Ini Buat Kamu`")
+                     "`\n />💖 *nih buat kamu`")
     sleep(2)
     await event.edit("`\n(\\_/)`"
                      "`\n(●_●)`"
-                     "`\n💖<\\  *Tapi Bo'ong`")
-# Alpinnnn Gans
+                     "`\n💖<\\  *gajadi, kamu ga deserve it`")
 
-
-@bot.on(boy(pattern=r"(.*)", outgoing=True))
-async def _(event):
-    if event.fwd_from:
-        return
-    animation_interval = 0.5
-    animation_ttl = range(0, 6)
-    input_str = event.pattern_match.group(1)
-    if input_str == "owner":
-        await event.edit(input_str)
-        animation_chars = [
-            "**OWNER RAM-UBOT ADALAH MANUSIA TERGANTENG DI HATI PEMAKAI NYA, KENALAN DULU SAMA OWNER NYA YUK**"
-            "**RAMADHANI NAMANYA,ORANG NYA BAIK**"
-            "**TINGGAL NYA DI TANGERANG, BTW ORANG TANGERANG GANTENG GANTENG DAN THEBEST POKOK NYA AWWHHHH**"
-            "**KALO MAU FORK REPONYA,IZIN DULU KE ORANG NYA YA GENGSSS**"
-            "**POKOK NYA OWNER NYA THEBEST BANGET SERIUSSSSS**"
-            "**UDAH POKOK NYA ITU AJA SIH,INTINYA OWNER NYA GANTENG DAN BAIK PARAH**"]
-        for i in animation_ttl:
-            await asyncio.sleep(animation_interval)
-            await event.edit(animation_chars[i % 6])
 
 CMD_HELP.update({
     "memes5":
-    f"`{cmd}nah` ; `{cmd}huh` ; `{cmd}owner`\
+    f"`{cmd}nah` ; `{cmd}huh`\
     \nUsage: cobain.\
     \n\n`{cmd}bunga` ; `{cmd}buah`\
     \nUsage: animasi.\
