@@ -159,16 +159,10 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
-    await pong.client.send_message(
-        pong.chat_id, f"**⛧𝗭𝗔𝗥-𝗣𝗜𝗡𝗚⛧**\n"
-                     f"** ➠  Sɪɢɴᴀʟ   :** "
-                     f"`%sms` \n"
-                     f"** ➠  Bᴏᴛᴠᴇʀ  :** "
-                     f"`{BOT_VER}` \n"
-                     f"** ➠  Uᴘᴛɪᴍᴇ  :** "
-                     f"`{uptime}` \n"
-                     f"** ➠  Oᴡɴᴇʀ   :** [{user.first_name}](tg://user?id={user.id})" % (duration), reply_to=pong.reply_to_msg_id)
-    await pong.delete()
+    await pong.reply(
+            f"❏ ᴢᴀʀ ᴘɪɴɢ\n"
+            f"`%sms`" % (duration)
+    )
 
 @ram_cmd(pattern="speed$")
 async def speedtst(spd):
