@@ -764,7 +764,7 @@ with bot:
                     link_preview=False,
                 )
             else:
-                reply_pop_up_alert = f"Jangan Asal pencet aja ngentod, Itu milik {owner}"
+                reply_pop_up_alert = f"ngapain si goblok, ini milik zar jangan asal pencet aja"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -779,7 +779,7 @@ with bot:
                 await event.edit(buttons=buttons)
             else:
                 reply_pop_up_alert = (
-                    f"Jangan asal pencet aja ngentod, itu milik {ALIVE_NAME}"
+                    f"ngapain si goblok, ini milik zar jangan asal pencet aja"
                 )
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -791,7 +791,7 @@ with bot:
                     "⛧ **Help Mode Button Ditutup!** ⛧", buttons=openlagi
                 )
             else:
-                reply_pop_up_alert = f"Dikata Jangan Asal pencet milik {owner}"
+                reply_pop_up_alert = f"dikata jangan asal pencet goblok, ini milik zar"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -805,7 +805,7 @@ with bot:
                 buttons = paginate_help(current_page_number - 1, dugmeler, "helpme")
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Anak Kontol, Ini Milik {owner}"
+                reply_pop_up_alert = f"ngapain si goblok, ini milik zar jangan asal pencet aja"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ub_modul_(.*)")))
@@ -820,7 +820,7 @@ with bot:
                         .replace("`", "")
                         .replace("**", "")[:150]
                         + "..."
-                        + "\n\nBaca Teks Berikutnya Ketik .help "
+                        + "\n\nbaca teks berikutnya ketik {}help "
                         + modul_name
                         + " "
                     )
@@ -837,7 +837,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"Jangan Asal Pencet Aja Ngentot, Ini Milik {owner}"
+                reply_pop_up_alert = f"ngapain si goblok, ini milik zar jangan asal pencet aja"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
