@@ -978,7 +978,7 @@ CMD_HELP.update({
 \nUsage: mememememe\
 \n\n`{cmd}wtf`\
 \nUsage: Lihat Sendiri\
-\n\n`{cmd}load`,`{cmd}up`,`{cmd}square`,`{cmd}round`,`{cmd}heart`,`{cmd}monkey`,`{cmd}anim`,`{cmd}hand`, `{cmd}kiss`\
+\n\n`{cmd}load`, `{cmd}up`, `{cmd}square`, `{cmd}round`, `{cmd}heart`, `{cmd}monkey`, `{cmd}anim`, `{cmd}hand`, `{cmd}kiss`\
 \nUsage: Lihat Sendiri\
 \n\n`{cmd}human`\
 \nUsage: Tidak Ada Yang Menarik"
