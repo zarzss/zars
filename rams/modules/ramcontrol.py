@@ -919,15 +919,9 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"**greetings, {mention}!**\
+            start_msg = f"**greetings,** {mention}\
                         \n\n**saya adalah {my_first}**\
                         \n**apa ada yang bisa saya bantu {mention}?**"
-            buttons = [
-                (
-                    Button.url("ᴄʜᴀɴɴᴇʟ", f"{CH_SFS}"),
-                    Button.url("ɪɴsᴛᴀɢʀᴀᴍ", f"{IG_ALIVE}"),
-                )
-            ]
     else:
         start_msg = f"**hi [{OWNER}](tg://user?id={OWNER_ID})**\
             \n**mau ngapain tod?**"
