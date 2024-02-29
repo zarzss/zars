@@ -162,8 +162,8 @@ async def _(event):
     if event.fwd_from:
         return
     input = event.pattern_match.group(1)  # get input
-    exp = "Given expression is " + input  # report back input
-    xx = await edit_or_reply(event, "`Processing...`")
+    exp = "hasil dari " + input + "adalah"  # report back input
+    xx = await edit_or_reply(event, "`mikir dulu...`")
     # lazy workaround to add support for two digits
     final_input = tuple(input)
     term1part1 = final_input[0]
@@ -178,18 +178,18 @@ async def _(event):
     # actual calculations go here
     if input == "help":
         await xx.edit(
-            "Syntax .calc <term1><operator><term2>\nFor eg .calc 02*02 or 99*99 (the zeros are important) (two terms and two digits max)"
+            "Syntax .calc <term1><operator><term2>\nFor eg .calc 02 * 02 or 99 * 99 (the zeros are important) (two terms and two digits max)"
         )
     elif operator == "*":
-        await xx.edit("Solution -->\n" + exp + "\n" + str(final_term1 * final_term2))
+        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 * final_term2))
     elif operator == "-":
-        await xx.edit("Solution -->\n" + exp + "\n" + str(final_term1 - final_term2))
+        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 - final_term2))
     elif operator == "+":
-        await xx.edit("Solution -->\n" + exp + "\n" + str(final_term1 + final_term2))
+        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 + final_term2))
     elif operator == "/":
-        await xx.edit("Solution -->\n" + exp + "\n" + str(final_term1 / final_term2))
+        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 / final_term2))
     elif operator == "%":
-        await xx.edit("Solution -->\n" + exp + "\n" + str(final_term1 % final_term2))
+        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 % final_term2))
     else:
         await xx.edit("**Ketik** `.help calc` **bila butuh bantuan**")
 
@@ -972,7 +972,7 @@ CMD_HELP.update(
     {
         "grab": f"**Plugin : **`grab`\
         \n\n  •  **Syntax :** `{cmd}grab` <reply ke user yang ingin di grab>\
-        \n  •  **Function : **Balas Ke Pesan Pengguna Telegram dan Ketik `{cmd}grab` Atau `{cmd}grab <count>` Untuk Mengambil Foto Profil.\
+        \n  •  **Function : **Balas Ke Pesan Pengguna Telegram dan Ketik `{cmd}grab` Atau `{cmd}grab <jumlah>` Untuk Mengambil Foto Profil.\
         \n\n  •  **Syntax :** `{cmd}grab` <jumlah foto>\
         \n  •  **Function : **Untuk Mengambil Foto Profil dengan jumlah foto yg di inginkan.\
     "
