@@ -7,12 +7,12 @@
 <img src="https://telegra.ph/file/fac49608eb86a69f85745.jpg">
 
 <p align="center">
-  <a href="https://github.com/ramadhani892/RAM-UBOT/fork">
-    <img src="https://img.shields.io/github/forks/ramadhani892/RAM-UBOT?label=Fork&style=social">
+  <a href="https://github.com/izzy-adeeva/RAM-UTOD/fork">
+    <img src="https://img.shields.io/github/forks/izzy-adeeva/RAM-UTOD?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/ramadhani892/RAM-UBOT">
-    <img src="https://img.shields.io/github/stars/ramadhani892/RAM-UBOT?style=social">
+  <a href="https://github.com/izzy-adeeva/RAM-UTOD">
+    <img src="https://img.shields.io/github/stars/izzy-adeeva/RAM-UTOD?style=social">
   </a>
 </p>  
 
