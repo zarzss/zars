@@ -92,7 +92,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 xx, "**Gagal Apdet!** Di Karenakan Ada Code Yang rusak.`"
             )
         await edit_or_reply(
-            xx, f"**ubot lu udah gua kentot, kalo ga idup tanya ke @jarsuprot**"
+            xx, f"**ubot lu udah gua kentot ya, lagi restart bentar...**"
     )
 
     else:
@@ -107,7 +107,7 @@ async def update(xx, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await edit_or_reply(
-        xx, f"**ubot lu udah gua kentot, kalo ga idup tanya ke @jarsuprot**"
+        xx, f"**ubot lu udah gua kentot ya, lagi restart bentar...**"
     )
 
     try:
@@ -168,12 +168,12 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "dulu":
-        await xx.edit(f"`[ZAR-UBOT], Sedang Apdet pada Branch [{ac_br}], Harap Tunggu beberapa Saat...`")
+        await xx.edit(f"`ubot lu lagi di apdet anjing sabar dikit napa...`")
         await deploy(xx, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and not force_update:
-        await edit_delete(xx, "**😔✋ Baru abis apdet tolol, Belom ada apdet lagi.**")
+        await edit_delete(xx, "**😔✋ Baru abis apdet tolol, belom ada apdet lagi.**")
         return repo.__del__()
 
     if conf == "" and not force_update:
