@@ -1038,7 +1038,11 @@ CMD_HELP.update({
 \n\n`{cmd}gift`\
 \nUsage: Memberi Hadiah Tapi Aku Tidak Mau Member Tau Apa Dalamnya!\
 \n\n`{cmd}kill`\
-\nUsage: Untuk Membunuh Musuh Secara Online:v"
+\nUsage: Untuk Membunuh Musuh Secara Online:v\
+\n\n`{cmd}bernyanyi`\
+\nUsage: benyanyi.\
+\n\n`{cmd}terkadang`\
+\nUsage: terkadang."
 })
 
 CMD_HELP.update({
