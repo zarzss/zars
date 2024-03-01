@@ -107,7 +107,7 @@ async def _(event):
             "⬜⬜⬜⬜\n⬜⬜⬜⬜\n⬜⬜⬜⬜\n⬜⬜⬜⬜",
             "⬜⬜⬜\n⬜⬜⬜\n⬜⬜⬜",
             "⬜⬜\n⬜⬜",
-            "[🎁](tg://settings/)"]
+            "[🎁](https://giphygifs.s3.amazonaws.com/media/5Y2bU7FqLOuzK/giphy.mp4)"]
         for i in animation_ttl:
             await asyncio.sleep(animation_interval)
             await event.edit(animation_chars[i % 17])
@@ -206,6 +206,53 @@ async def _(event):
             await asyncio.sleep(animation_interval)
             await event.edit(animation_chars[i % 24])
 
+@ram_cmd(pattern="terkadang(?: |$)(.*)")
+async def _(event):
+    typew = await edit_or_reply(event, "`Terkadang`")
+    sleep(1)
+    await typew.edit("`Mencintai Seseorang`")
+    sleep(1)
+    await typew.edit("`Hanya Akan Membuang Waktumu`")
+    sleep(1)
+    await typew.edit("`Ketika Waktumu Habis`")
+    sleep(1)
+    await typew.edit("`Tambah Aja 5000`")
+    sleep(1)
+    await typew.edit("`Bercanda`")
+
+@ram_cmd(pattern="bernyanyi(?: |$)(.*)")
+async def _(event):
+    typew = await edit_or_reply(event, "**Ganteng Doang Gak Bernyanyi (ง˙o˙)ว**")
+    sleep(2)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
 
 @ram_cmd(pattern="gangstar(?: |$)(.*)")
 async def _(event):
