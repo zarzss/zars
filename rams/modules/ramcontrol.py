@@ -924,8 +924,7 @@ async def bot_start(event):
                         \n**apa ada yang bisa saya bantu {mention}?**"
             buttons = [
             (
-                Button.url("owner", f"tg://user?id={OWNER_ID}"),
-                Button.url("channel", f"{CH_SFS}"),
+                Button.url("message by zar-bot", f"tg://user?id={OWNER_ID}"),
             )
         ]
     else:
