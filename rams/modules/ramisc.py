@@ -162,7 +162,7 @@ async def _(event):
     if event.fwd_from:
         return
     input = event.pattern_match.group(1)  # get input
-    exp = "hasil dari " + input + "adalah"  # report back input
+    exp = "hasil dari " + input + " adalah"  # report back input
     xx = await edit_or_reply(event, "`mikir dulu...`")
     # lazy workaround to add support for two digits
     final_input = tuple(input)
@@ -181,15 +181,15 @@ async def _(event):
             "Syntax .calc <term1><operator><term2>\nFor eg .calc 02 * 02 or 99 * 99 (the zeros are important) (two terms and two digits max)"
         )
     elif operator == "*":
-        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 * final_term2))
+        await xx.edit("kok lu bego banget sih, nih " + exp + "\n" + str(final_term1 * final_term2))
     elif operator == "-":
-        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 - final_term2))
+        await xx.edit("kok lu bego banget sih, nih " + exp + "\n" + str(final_term1 - final_term2))
     elif operator == "+":
-        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 + final_term2))
+        await xx.edit("kok lu bego banget sih, nih " + exp + "\n" + str(final_term1 + final_term2))
     elif operator == "/":
-        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 / final_term2))
+        await xx.edit("kok lu bego banget sih, nih " + exp + "\n" + str(final_term1 / final_term2))
     elif operator == "%":
-        await xx.edit("kok lu bego banget sih, nih" + exp + "\n" + str(final_term1 % final_term2))
+        await xx.edit("kok lu bego banget sih, nih " + exp + "\n" + str(final_term1 % final_term2))
     else:
         await xx.edit("**Ketik** `.help calc` **bila butuh bantuan**")
 
