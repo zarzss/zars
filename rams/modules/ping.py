@@ -154,7 +154,7 @@ async def redis(pingx):
     await pingx.reply(
             f"**⛥ ᴘɪɴɢ** `%sms`\n"
             f"**⛥ ᴜᴘᴛɪᴍᴇ** `{uptime}`\n"
-            f"**⛥ ᴍᴇɴᴛɪᴏɴ [{user.first_name}](tg://user?id={user.id}**" % (duration)
+            f"**⛥ ᴍᴇɴᴛɪᴏɴ [{user.first_name}](tg://user?id={user.id})**" % (duration)
     )
 
 def speed_convert(size):
