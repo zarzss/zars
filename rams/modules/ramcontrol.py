@@ -922,6 +922,12 @@ async def bot_start(event):
             start_msg = f"**greetings,** {mention}\
                         \n\n**saya adalah {my_first}**\
                         \n**apa ada yang bisa saya bantu {mention}?**"
+            buttons = [
+            (
+                Button.url("owner", f"tg://user?id={OWNER_ID}"),
+                Button.url("channel", f"{CH_SFS}"),
+            )
+        ]
     else:
         start_msg = f"**hi [{OWNER}](tg://user?id={OWNER_ID})**\
             \n**mau ngapain tod?**"
