@@ -9,7 +9,7 @@ from rams.utils import edit_or_reply, ram_cmd
 from rams import CMD_HANDLER as cmd
 
 
-@ram_cmd(pattern="terkadang(?: |$)(.*)")
+@ram_cmd(pattern="kdng(?: |$)(.*)")
 async def _(event):
     typew = await edit_or_reply(event, "`Terkadang`")
     sleep(1)
