@@ -111,7 +111,7 @@ async def _(pong):
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await pong.reply(
-            f"♡ CROOTTTT PINGGGG!\n"
+            f"**♡ CROOTTTT PINGGGG!**\n"
             f"`%sms`" % (duration)
     )
 
