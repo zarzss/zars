@@ -116,11 +116,11 @@ async def _(pong):
     )
 
 @ram_cmd(pattern="pink$")
-async def redis(pong):
+async def redis(pingx):
     """For .ping command, ping the rams from any chat."""
-    await get_readable_time((time.time() - StartTime))
+    uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ram = await edit_or_reply(pong, "**𓀐.....................................𓂸**")
+    ram = await edit_or_reply(pingx, "**𓀐.....................................𓂸**")
     await ram.edit("**𓀐..................................𓂸..**")
     await ram.edit("**𓀐................................𓂸....**")
     await ram.edit("**𓀐..............................𓂸......**")
@@ -144,43 +144,16 @@ async def redis(pong):
     await ram.edit("**𓀐𓂸...................................**")
     await ram.edit("**𓀐.𓂸..................................**")
     await ram.edit("**𓂺**")
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    user = await pong.client.get_me()
-    await pong.reply(
+    user = await pingx.client.get_me()
+    await pingx.reply(
             f"**⛥ ᴢᴀʀ ᴘɪɴɢᴇʀ**\n"
             f"`%sms`\n"
             f"**⛥ ᴜᴘᴛɪᴍᴇ**"
             f"`{uptime}`" % (duration)
     )
-
-@ram_cmd(pattern="speed$")
-async def speedtst(spd):
-    """ For .speed command, use SpeedTest to check server speeds. """
-    await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Mohon Tunggu...✨`")
-    test = Speedtest()
-
-    test.get_best_server()
-    test.download()
-    test.upload()
-    test.results.share()
-    result = test.results.dict()
-
-    await spd.edit("**Kecepatan Jaringan:\n**"
-                   "✧ **Dimulai Pada :** "
-                   f"`{result['timestamp']}` \n"
-                   f" **━━━━━━━━━━━━━━━━━**\n\n"
-                   "✧ **Download:** "
-                   f"`{speed_convert(result['download'])}` \n"
-                   "✧ **Upload:** "
-                   f"`{speed_convert(result['upload'])}` \n"
-                   "✧ **Signal:** "
-                   f"`{result['ping']}` \n"
-                   "✧ **ISP:** "
-                   f"`{result['client']['isp']}` \n"
-                   f"✧ **BOT:** {REPO_NAME}")
-
 
 def speed_convert(size):
     """
@@ -195,28 +168,7 @@ def speed_convert(size):
     return f"{round(size, 2)} {units[zero]}"
 
 
-@ram_cmd(pattern="pong$")
-async def pingme(pong):
-    """For .ping command, ping the rams from any chat."""
-    start = datetime.now()
-    ram = await edit_or_reply(pong, "`Pong...........🐎`")
-    await ram.edit("`Pong..........🐎.`")
-    await ram.edit("`Pong.........🐎..`")
-    await ram.edit("`Pong........🐎...`")
-    await ram.edit("`Pong.......🐎....`")
-    await ram.edit("`Pong......🐎.....`")
-    await ram.edit("`Pong.....🐎......`")
-    await ram.edit("`Pong....🐎.......`")
-    await ram.edit("`Pong...🐎........`")
-    await ram.edit("`Pong..🐎.........`")
-    await ram.edit("`Pong.🐎..........`")
-    await ram.edit("`Pong🐎...........`")
-    end = datetime.now()
-    duration = (end - start).microseconds / 9000
-    user= await pong.client.get_me()
-    await pong.client.send_message(
-        pong.chat_id, f"**✨Oᴡɴᴇʀ : [{user.first_name}](tg://user?id={user.id})**\n📗 `%sms`" % (duration), reply_to=pong.reply_to_msg_id)
-    await pong.delete()
+
 
 CMD_HELP.update({
     "ping": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}ping` or `{cmd}rping` or `{cmd}pink`\
