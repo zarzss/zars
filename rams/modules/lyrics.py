@@ -17,7 +17,7 @@ if GENIUS is not None:
 
 @register(outgoing=True, pattern="^.lyrics (?:(now)|(.*) - (.*))")
 async def lyrics(lyric):
-    await lyric.edit("`Getting information...`")
+    await lyric.edit("`searching lyrics...`")
     if GENIUS is None:
         await lyric.edit(
             "`Provide genius access token to Heroku ConfigVars...`")
@@ -39,7 +39,7 @@ async def lyrics(lyric):
     if songs is None:
         await lyric.edit(f"`Song`  **{artist} - {song}**  `not found...`")
         return False
-    if len(songs.lyrics) > 4096:
+    if len(songs.lyrics) > 10240:
         await lyric.edit("`Lyrics is too big, view the file to see it.`")
         with open("lyrics.txt", "w+") as f:
             f.write(f"Search query: \n{artist} - {song}\n\n{songs.lyrics}")
@@ -62,6 +62,4 @@ CMD_HELP.update({
     "lyrics":
     "`.lyrics` **<artist name> - <song name>**"
     "\nUsage: Get lyrics matched artist and song."
-    "\n\n`.lyrics now`"
-    "\nUsage: Get lyrics artist and song from current lastfm scrobbling."
 })
