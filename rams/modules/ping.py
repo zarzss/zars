@@ -71,7 +71,6 @@ async def get_readable_time(seconds: int) -> str:
 
 
 @ram_cmd(pattern="ping$")
-@register(outgoing=True, pattern=r"^\ping$")
 async def _(ping):
     """ For.ping command, ping the rams from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -85,7 +84,6 @@ async def _(ping):
     )
 
 @ram_cmd(pattern="pong$")
-@register(outgoing=True, pattern=r"^\pong$")
 async def _(pong):
     """For .ping command, ping the rams from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -118,7 +116,6 @@ async def _(pong):
     )
 
 @ram_cmd(pattern="pink$")
-@register(outgoing=True, pattern=r"^\pingx$")
 async def redis(pong):
     """For .ping command, ping the rams from any chat."""
     await get_readable_time((time.time() - StartTime))
