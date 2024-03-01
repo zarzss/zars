@@ -115,7 +115,7 @@ async def _(pong):
             f"`%sms`" % (duration)
     )
 
-@ram_cmd(pattern="pink$")
+@ram_cmd(pattern="pingx$")
 async def redis(pingx):
     """For .ping command, ping the rams from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -149,10 +149,9 @@ async def redis(pingx):
     duration = (end - start).microseconds / 1000
     user = await pingx.client.get_me()
     await pingx.reply(
-            f"**⛥ ᴢᴀʀ ᴘɪɴɢᴇʀ**\n"
-            f"`%sms`\n"
-            f"**⛥ ᴜᴘᴛɪᴍᴇ**"
-            f"`{uptime}`" % (duration)
+            f"**⛥ ᴘɪɴɢ** `%sms`\n"
+            f"**⛥ ᴜᴘᴛɪᴍᴇ** `{uptime}`\n"
+            f"**⛥ ᴍᴇɴᴛɪᴏɴ {user.first_name}**"  % (duration)
     )
 
 def speed_convert(size):
