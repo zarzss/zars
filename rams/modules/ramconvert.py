@@ -79,7 +79,7 @@ async def cevir(event):
             await event.client.send_file(
                 event.chat_id,
                 "output.mp3",
-                thumb="rams/utils/styles/RAMUBOT.jpg",
+                thumb="rams/utils/styles/zarbot.jpg",
                 reply_to=rep_msg,
             )
             await xxx.delete()
@@ -92,7 +92,7 @@ async def cevir(event):
     elif rambot == "mp3":
         rep_msg = await event.get_reply_message()
         if not event.is_reply or not rep_msg.video:
-            return await edit_delete(event, "**Lu reply media video lah ngentod!**")
+            return await edit_delete(event, "**mohon reply ke video...**")
         xx = await edit_or_reply(event, "`Mengconvert ke sound...`")
         video = io.BytesIO()
         video = await event.client.download_media(rep_msg.video)
@@ -105,14 +105,14 @@ async def cevir(event):
             await event.client.send_file(
                 event.chat_id,
                 "out.mp3",
-                thumb="rams/utils/styles/RAMUBOT.jpg",
+                thumb="rams/utils/styles/zarbot.jpg",
                 reply_to=rep_msg,
             )
         except BaseException:
             os.remove(video)
-            return await xx.edit("**Tidak dapat mengconvert ke audio! 🥺**")
+            return await xx.edit("**gagal mengconvert ke audio 🥺**")
         await xx.delete()
-        os.remove("out.mp3")
+        os.remove("song.mp3")
         os.remove(video)
     else:
         await xx.edit(
