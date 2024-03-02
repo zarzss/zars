@@ -104,7 +104,7 @@ async def cevir(event):
         try:
             await event.client.send_file(
                 event.chat_id,
-                "out.mp3",
+                "song.mp3",
                 thumb="rams/utils/styles/zarbot.jpg",
                 reply_to=rep_msg,
             )
