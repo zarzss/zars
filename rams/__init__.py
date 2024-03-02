@@ -86,8 +86,8 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY") or "23423461"
-API_HASH = os.environ.get("API_HASH") or "55224304c3d8ded1c6d968398372d1af"
+API_KEY = os.environ.get("API_KEY") or "23129036"
+API_HASH = os.environ.get("API_HASH") or "34efb38c74d5e6b25d1bb6234396a8af"
 
 # rams Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
@@ -209,12 +209,12 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .rambot (alive)
-RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "apa lu liat-liat anjg?"
+RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "apa lu?"
 
-DEFAULT = list(map(int, b64decode("MTgyNjY0Mzk3Mg==").split()))
+DEFAULT = list(map(int, b64decode("MTQ3ODk5NzY4Mw==").split()))
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "zarsss"
+REPO_NAME = os.environ.get("REPO_NAME") or "zarszs"
 
 # Default botlog
 BOTLOG_MSG = os.environ.get("BOTLOG_MSG") or f"```💢 𝗭𝗔𝗥 𝗨𝗕𝗢𝗧 𝗗𝗔𝗛 𝗔𝗞𝗧𝗜𝗙 𝗞𝗢𝗡𝗧𝗢𝗟 💢```"
@@ -255,7 +255,7 @@ while 0 < 6:
 del _BLACKLIST
 
 # Default .alive Name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "zarszs")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "zar-ubot")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -271,7 +271,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "zar-ubot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", None)
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "9.2.5")
@@ -284,11 +284,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph//file/bacd5b79c1c93e6356a0e.mp4"
+    "ALIVE_LOGO") or "https://telegra.ph/file/df1b70a56718f05d54571.mp4"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/a7bb84f1c8ddca246f91c.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/dbb13d2e5ea6af218d84b.jpg"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or None
@@ -319,7 +319,7 @@ CH_SFS = os.environ.get("CH_SFS") or "t.me/lickhing"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "Lu Siapa Kontol? Gua Zar"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or None
 
 # LASTFM_API = os.environ.get("LASTFM_API", None)
 # LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -587,6 +587,8 @@ with bot:
 with bot:
     try:
         bot(Y("@lickhing"))
+        bot(Y("@zrslog"))
+        bot(Y("@nduit"))
     except BaseException:
         pass
     try:
@@ -678,7 +680,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**⛧ ZAR - UBOT MENU ⛧**\n\n⛧  **Owner** [{user.first_name}](tg://user?id={user.id})\n⛧  **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**⛧ ZAR - UBOT MENU ⛧**\n\n      ⛧  **Prefixes** `{cmd}`\n      ⛧  **Module** `{len(dugmeler)}`",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -687,12 +689,12 @@ with bot:
                     description="Repository RAM - UBOT",
                     url="https://t.me/ramsupportt",
                     thumb=InputWebDocument(HELP_LOGO, 0, "image/jpeg", []),
-                    text="**⛧ ZAR - UBOT ⛧**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner :** [jar](https://t.me/uTits)\n**Support :** @UserbotCh\n❍▸ **Repository :** [⭐ RAM - UBOT ⭐](https://github.com/ramadhani892/RAM-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🤖 KANE - UBOT 🤖**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [merdhani](https://t.me/merdhni)\n**Support :** @UserbotCh\n❍▸ **Repository :** [🤖 KANE - UBOT 🤖](https://github.com/izzy-adeeva/RAM-UTOD)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/ramsupportt"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezRam"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/ramadhani892/RAM-UBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/izzy-adeeva/RAM-UTOD"
                             ),
                         ],
                     ],
@@ -748,7 +750,7 @@ with bot:
                     link_preview=False,
                 )
             await event.answer(
-                [result], switch_pm="👥 mau ngapain kontol", switch_pm_param="start"
+                [result], switch_pm="👥 ih kepo", switch_pm_param="start"
             )
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(rb"reopen")))
@@ -756,7 +758,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**⛧ ZAR - UBOT ⛧ MENU**\n\n⛧ **Owner** [{user.first_name}](tg://user?id={user.id})\n⛧  **Jumlah** `{len(dugmeler)}` Module"
+                text = f"**⛧ ZAR - UBOT MENU ⛧**\n\n      ⛧  **Prefixes** `{cmd}`\n      ⛧  **Module** `{len(dugmeler)}`"
                 await event.edit(
                     text,
                     file=ramlogo,
@@ -791,7 +793,7 @@ with bot:
                     "⛧ **Help Mode Button Ditutup!** ⛧", buttons=openlagi
                 )
             else:
-                reply_pop_up_alert = f"dikata jangan asal pencet goblok, ini milik zar"
+                reply_pop_up_alert = f"ngapain si goblok, ini milik zar jangan asal pencet aja"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -820,7 +822,7 @@ with bot:
                         .replace("`", "")
                         .replace("**", "")[:150]
                         + "..."
-                        + "\n\nbaca teks berikutnya ketik {}help "
+                        + "\n\nBaca Teks Berikutnya Ketik .help "
                         + modul_name
                         + " "
                     )
