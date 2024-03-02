@@ -241,7 +241,7 @@ async def amireallyalive(alive):
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
-            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            msg = await alive.reply(bot.send_file(alive.chat_id, logo, caption=output))
             await asyncio.sleep(50)
         except BaseException:
             await alive.edit(
@@ -250,7 +250,7 @@ async def amireallyalive(alive):
             )
             await asyncio.sleep(100)
     else:
-        await alive.reply(output)
+        await alive.edit(output)
         await asyncio.sleep(100)
 
 @ram_cmd(pattern=r"(?:zalive|zon)\s?(.)?")
