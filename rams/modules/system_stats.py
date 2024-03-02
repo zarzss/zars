@@ -241,16 +241,16 @@ async def amireallyalive(alive):
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
-            msg = await alive.reply(bot.send_file(alive.chat_id, logo, caption=output))
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(50)
         except BaseException:
-            await alive.edit(
+            await alive.reply(
                 output + "\n\n *`The provided logo is invalid."
                 "\nMake sure the link is directed to the logo picture`"
             )
             await asyncio.sleep(100)
     else:
-        await alive.edit(output)
+        await alive.reply(output)
         await asyncio.sleep(100)
 
 @ram_cmd(pattern=r"(?:zalive|zon)\s?(.)?")
