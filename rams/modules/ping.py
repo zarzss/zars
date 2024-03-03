@@ -71,7 +71,7 @@ async def get_readable_time(seconds: int) -> str:
 
 
 @register(pattern=r"^pingx$")
-@ram_cmd(pattern="ping$")
+@ram_cmd(pattern="tempik$")
 async def _(ping):
     """ For.ping command, ping the rams from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -80,12 +80,13 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await ping.reply(
-            f"**❏ ᴢᴀʀ ᴘɪɴɢᴇʀ**\n"
-            f"`%sms`" % (duration)
+            f"**⛥ ᴘɪɴɢ** `%sms`\n"
+            f"**⛥ ᴜᴘᴛɪᴍᴇ** `{uptime}`\n"
+            f"**⛥ —ɪ'ᴍ [{user.first_name}](tg://user?id={user.id})**" % (duration)
     )
 
 @register(pattern=r"^pongx$")
-@ram_cmd(pattern="pong$")
+@ram_cmd(pattern="iclik$")
 async def _(pong):
     """For .ping command, ping the rams from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -118,7 +119,7 @@ async def _(pong):
     )
 
 @register(pattern=r"^pinkx$")
-@ram_cmd(pattern="pink$")
+@ram_cmd(pattern="cok$")
 async def redis(pingx):
     """For .ping command, ping the rams from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -154,7 +155,7 @@ async def redis(pingx):
     await pingx.reply(
             f"**⛥ ᴘɪɴɢ** `%sms`\n"
             f"**⛥ ᴜᴘᴛɪᴍᴇ** `{uptime}`\n"
-            f"**⛥ ᴍᴇɴᴛɪᴏɴ [{user.first_name}](tg://user?id={user.id})**" % (duration)
+            f"**⛥ —ɪ'ᴍ [{user.first_name}](tg://user?id={user.id})**" % (duration)
     )
 
 def speed_convert(size):
