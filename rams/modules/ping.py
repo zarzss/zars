@@ -70,7 +70,7 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(pattern=r"^pingx$")
+@register(outgoing=True, pattern=r"^\tempik$")
 @ram_cmd(pattern="tempik$")
 async def _(ping):
     """ For.ping command, ping the rams from any chat."""
@@ -85,7 +85,7 @@ async def _(ping):
             f"**⛥ —ɪ'ᴍ [{user.first_name}](tg://user?id={user.id})**" % (duration)
     )
 
-@register(pattern=r"^pongx$")
+@register(outgoing=True, pattern=r"^\iclik$")
 @ram_cmd(pattern="iclik$")
 async def _(pong):
     """For .ping command, ping the rams from any chat."""
@@ -118,7 +118,7 @@ async def _(pong):
             f"`%sms`" % (duration)
     )
 
-@register(pattern=r"^pinkx$")
+@register(outgoing=True, pattern=r"^\cok$")
 @ram_cmd(pattern="cok$")
 async def redis(pingx):
     """For .ping command, ping the rams from any chat."""
