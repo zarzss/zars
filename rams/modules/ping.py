@@ -89,7 +89,7 @@ async def _(pong):
     """For .ping command, ping the rams from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ram = await reply(pong, "**8✊===D**")
+    ram = await edit_or_reply(pong, "**8✊===D**")
     await ram.edit("8=✊==D")
     await ram.edit("8==✊=D")
     await ram.edit("8===✊D")
@@ -111,7 +111,7 @@ async def _(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
-    await pong.edit_or_reply(
+    await pong.reply(
             f"**♡ CROOTTTT PINGGGG!**\n"
             f"`%sms`" % (duration)
     )
