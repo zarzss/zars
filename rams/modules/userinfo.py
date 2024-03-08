@@ -15,13 +15,13 @@ from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 
 from rams import CMD_HANDLER as cmd
-from rams import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
+from rams import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, bot
 from rams.utils import edit_or_reply, ram_cmd
 
 
-@ram_cmd(pattern="ginfo(?: |$)(.*)")
+@ram_cmd(pattern="wh(?: |$)(.*)")
 async def who(event):
-    xx = await edit_or_reply(event, "`Gua mau tau ni sapa si dia anjingg...`")
+    xx = await edit_or_reply(event, "`getting user info...`")
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
     replied_user = await get_user(event)
@@ -57,7 +57,7 @@ async def get_user(event):
     """Get the user from argument or replied message."""
     if event.reply_to_msg_id and not event.pattern_match.group(1):
         previous_message = await event.get_reply_message()
-        if previous_message.sender_id is None and not event.is_private:
+        if previous_message.from_id is None and not event.is_private:
             return None
         replied_user = await event.client(
             GetFullUserRequest(previous_message.sender_id)
@@ -149,7 +149,7 @@ async def fetch_info(replied_user, event):
 CMD_HELP.update(
     {
         "ginfo": f"**Plugin : **`ginfo`\
-        \n\n  •  **Syntax :** `{cmd}ginfo` <username> Atau Balas Ke Pesan Pengguna Ketik `{cmd}ginfo`\
+        \n\n  •  **Syntax :** `{cmd}wh` <username> Atau Balas Ke Pesan Pengguna Ketik `{cmd}wh`\
         \n  •  **Function : **Mendapatkan Informasi Pengguna.\
     "
     }
