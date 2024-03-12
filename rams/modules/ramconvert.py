@@ -15,7 +15,7 @@ from rams import CMD_HELP
 from rams.utils import edit_delete, edit_or_reply, ram_cmd, runcmd
 
 
-@ram_cmd(pattern="convert ?(foto|audio|gif|voice|photo|mp3)? ?(.*)")
+@ram_cmd(pattern="to ?(foto|audio|gif|voice|photo|mp3)? ?(.*)")
 async def cevir(event):
     rambot = event.pattern_match.group(1)
     try:
