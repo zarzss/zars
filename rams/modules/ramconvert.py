@@ -97,7 +97,7 @@ async def cevir(event):
         video = io.BytesIO()
         video = await event.client.download_media(rep_msg.video)
         gif = await asyncio.create_subprocess_shell(
-            f"ffmpeg -y -i '{video}' -vn -b:a 128k -c:a libmp3lame out.mp3"
+            f"ffmpeg -y -i '{video}' -vn -b:a 128k -c:a libmp3lame song.mp3"
         )
         await gif.communicate()
         await xx.edit("`Uploading Sound...`")
