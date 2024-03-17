@@ -181,7 +181,7 @@ async def ban(bon):
     if not admin and not creator:
         return await eor(bon, NO_ADMIN)
     user, reason = await get_user_from_event(bon)
-    rambot = await eor(bon, "`Kita Banned Jamed dulu ya gess!!`")
+    rambot = await eor(bon, "`banned this user sialan...`")
     if not user:
         return
     sendiri = await bon.client.get_me()
@@ -202,7 +202,7 @@ async def ban(bon):
         )
     else:
         await rambot.edit(
-            f"✨ **#Banned_User** ✨\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})\n**User ID:** `{user.id}`\n**Action:** `Banned User by {me.first_name}`",
+            f"[{user.first_name}](tg://user?id={user.id}) done banned bangkuhhh🔥",
         )
 
 
