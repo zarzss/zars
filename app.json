@@ -25,6 +25,9 @@
     "HEROKU_API_KEY": {
       "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
       "required": true
+    },
+    "BOTLOG_CHATID": {
+      "required": true
     }
   },
   "addons": [
