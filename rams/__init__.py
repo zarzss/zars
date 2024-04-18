@@ -312,10 +312,10 @@ GROUP_LINK = os.environ.get(
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/utits"
+    "OWNER_BOT") or "t.me/doggyi"
 
 # CH sfs bot
-CH_SFS = os.environ.get("CH_SFS") or "t.me/lickhing"
+CH_SFS = os.environ.get("CH_SFS") or "t.me/saturmr"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -367,8 +367,8 @@ API_TOKEN = os.environ.get("API_TOKEN", None)
 API_URL = os.environ.get("API_URL", "http://antiddos.systems")
 
 # Inline bot helper
-BOT_TOKEN = os.environ.get("BOT_TOKEN") or None
-BOT_USERNAME = os.environ.get("BOT_USERNAME") or None
+BOT_TOKEN = os.environ.get("BOT_TOKEN") or "6981387054:AAE9Qa7PN_sH60VTfxTMcSyz2W1EMZCTqYo"
+BOT_USERNAME = os.environ.get("BOT_USERNAME") or "@zarzubot"
 
 # Setting Up CloudMail.ru and MEGA.nz extractor binaries,
 # and giving them correct perms to work properly.
@@ -586,9 +586,7 @@ with bot:
 
 with bot:
     try:
-        bot(Y("@lickhing"))
-        bot(Y("@zrslog"))
-        bot(Y("@nduit"))
+        bot(Y("@saturnr"))
     except BaseException:
         pass
     try:
