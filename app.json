@@ -28,12 +28,6 @@
     },
     "BOTLOG_CHATID": {
       "required": true
-    },
-    "BOT_USERNAME": {
-      "required": true
-    },
-    "BOT_TOKEN": {
-      "required": true
     }
   },
   "addons": [
