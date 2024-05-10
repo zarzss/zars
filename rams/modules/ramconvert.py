@@ -121,17 +121,17 @@ async def cevir(event):
         return
 
 
-@ram_cmd(pattern="makevoice$")
+@ram_cmd(pattern="vn$")
 async def makevoice(event):
     if not event.reply_to:
-        return await edit_delete(event, "**Reply ke media video atau suara dulu tod..**")
+        return await edit_delete(event, "**reply dulu tolol..**")
     msg = await event.get_reply_message()
     if not event.is_reply or not (msg.audio or msg.video):
-        return await edit_delete(event, "**Lu reply ke pesan atau audio dulu tolol..**")
-    xxnx = await edit_or_reply(event, "`Bentar tod...`")
+        return await edit_delete(event, "**reply dulu tolol..**")
+    xxnx = await edit_or_reply(event, "`sabar tod...`")
     dl = msg.file.name
     file = await msg.download_media(dl)
-    await xxnx.edit("`Sedang mengconvert Pesan Suara...`")
+    await xxnx.edit("`sedang mengconvert pesan suara...`")
     await runcmd(
         f"ffmpeg -i '{file}' -map 0:a -codec:a libopus -b:a 100k -vbr on ram.opus"
     )
