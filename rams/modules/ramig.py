@@ -25,7 +25,7 @@ from rams import CMD_HELP
 from rams.utils import edit_delete, edit_or_reply, ram_cmd as tod
 
 
-@tod(pattern="dw(?: |$)(.*)")
+@tod(pattern="ig(?: |$)(.*)")
 async def insta(event):
     xxnx = event.pattern_match.group(1)
     if xxnx:
@@ -95,7 +95,7 @@ async def DeezLoader(event):
         await event.delete()
 
 
-@tod(pattern="tiktok(?: |$)(.*)")
+@tod(pattern="tt(?: |$)(.*)")
 async def _(event):
     xxnx = event.pattern_match.group(1)
     if xxnx:
@@ -107,8 +107,8 @@ async def _(event):
             event,
             "**Berikan Link Tiktok Pesan atau Reply Link Tiktok Untuk di Download**",
         )
-    xx = await edit_or_reply(event, "`Video Sedang Diproses...`")
-    chat = "@thisvidbot"
+    xx = await edit_or_reply(event, "`bentar tot...`")
+    chat = "@downloader_tiktok_bot"
     async with event.client.conversation(chat) as conv:
         try:
             msg_start = await conv.send_message("/start")
